@@ -1,0 +1,40 @@
+{
+  "name": "o-m-e-g-a",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "server": "uvicorn app.main:app --app-dir backend --reload --port 8000 --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "test:backend": "pytest backend/tests -v",
+    "test": "pytest backend/tests -v && oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.6.1",
+    "@react-three/postprocessing": "^3.0.4",
+    "d3-force-3d": "^3.0.6",
+    "postprocessing": "^6.39.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.185.1",
+    "@vitejs/plugin-react": "^6.0.4",
+    "autoprefixer": "^10.5.4",
+    "oxlint": "^1.75.0",
+    "postcss": "^8.5.25",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.2.0"
+  }
+}
